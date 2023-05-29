@@ -87,7 +87,7 @@ function GameDecision(option){
 
         result1 = document.getElementById("Result-Machine2").innerHTML="Empate";
         
-    }else if((option === "Piedra" && MachineAleatory === "Tijeras") || (option === "Papel" && MachineAleatory === "Piedra") || (option === "Scissor" && MachineAleatory === "Paper")){
+    }else if((option === "Piedra" && MachineAleatory === "Tijeras") || (option === "Papel" && MachineAleatory === "Piedra") || (option === "Tijeras" && MachineAleatory === "Papel")){
 
         result1 = document.getElementById("Result-Machine2").innerHTML="Ganaste";
         switch (Methods) {
