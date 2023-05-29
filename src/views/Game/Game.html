@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Game!</title>
+    <link rel="stylesheet" href="./Game.css" type="text/css">
+    <link rel="stylesheet" href="../../normalize.css" type="text/css">
+    
+</head>
+
+<body>
+    <div class="Container-Score">
+        <div class="Score">
+            <div class="points"></div>
+            <div class="points"></div>
+            <div class="points"></div>
+            <div class="points"></div>
+            <div class="points"></div>
+        </div>
+    </div>
+    <div class="Container-cards">
+        <div class="Cards-title">
+            <h1>Escoge una carta</h1>
+        </div>
+        <div class="Cards-Box">
+            <div class="Cards" id="Rock"  onclick="Hide('Cramer', 'Rock')">
+                <div class="Cards-hands">
+                    <img src="../../assets/Hand-rock.svg" alt="">
+                </div>
+                <div class="Cards-name">
+                    <h2>Piedra</h2>
+                </div>
+            </div>
+            <div class="Cards" id="Paper" onclick="Hide('Gauss-Jordan', 'Paper')">
+                <div class="Cards-hands">
+                    <img src="../../assets/Hand-paper.svg" alt="">
+                </div>
+                <div class="Cards-name">
+                    <h2>Papel</h2>
+                </div>
+            </div>
+            <div class="Cards" id="Scissor" onclick="Hide('Sarrus', 'Scissor')">
+                <div class="Cards-hands">
+                    <img src="../../assets/Hand-scissor.svg" alt="">
+                </div>
+                <div class="Cards-name">
+                    <h2>Tijeras</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ModalExercise1" id="Gauss-Jordan">
+        <div class="ModalBox">
+            <div class="Modal-title">
+                <h2>Le has ganado a la maquina</h2>
+                <p>Ahora resuelve para conseguir el punto</p>
+            </div>
+            <div class="Modal-Exercise">
+                <div class="Exercise-title">
+                    <p>Usa el metodo de Gauss-Jordan</p>
+                </div>
+                <div class="ExcercisePure">
+                    <div class="ExcerciseProblem">
+                        <div class="DivCoeficient">
+                            <p class="Coeficient" id="Coeficient"></p>
+                            <p class="Coeficient" id="Coeficient"></p>
+                            <p class="Coeficient" id="Coeficient"></p>
+                            <p class="Coeficient" id="Coeficient"></p>
+                            <p class="Coeficient" id="Coeficient"></p>
+                            <p class="Coeficient" id="Coeficient"></p>
+                            <p class="Coeficient" id="Coeficient"></p>
+                            <p class="Coeficient" id="Coeficient"></p>
+                            <p class="Coeficient" id="Coeficient"></p>
+                        </div>
+                        <div class="Lane"><hr></div>
+                        <div class="Divequality">
+                            <p class="equality" id="equality"></p>
+                            <p class="equality" id="equality"></p>
+                            <p class="equality" id="equality"></p>
+                        </div>
+                    </div>
+                    <div class="ExerciseSolution">
+                        <div class="Solution_X-Y-Z_">
+                            <div c>
+                                <p class="X">X =</p>
+                                <p class="Y">Y =</p>
+                                <p class="Z">Z =</p>
+                            </div>
+                            <form action="">
+                                <input  class="Gauss-Jordan-form"  type="number">
+                                <input  class="Gauss-Jordan-form"  type="number">
+                                <input   class="Gauss-Jordan-form" type="number">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="Modal-Button">
+                    <button  class="Button-Modal" onclick="Hide('Gauss-Jordan')">Verificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ModalExercise2" id="Cramer">
+        <div class="ModalBox">
+            <div class="Modal-title">
+                <h2>Le has ganado a la maquina</h2>
+                <p>Ahora resuelve para conseguir el punto</p>
+            </div>
+            <div class="Modal-Exercise">
+                <div class="Exercise-title">
+                    <p>Usa el metodo de Cramer</p>
+                </div>
+                <div class="ExcercisePure">
+                    <div class="ExcerciseProblem">
+                        <div class="DivCoeficient">
+                            <p class="Coeficient" id="CoeficientC1"></p>
+                            <p class="Coeficient" id="CoeficientC2"></p>
+                            <p class="Coeficient" id="CoeficientC3"></p>
+                            <p class="Coeficient" id="CoeficientC4"></p>
+                            <p class="Coeficient" id="CoeficientC5"></p>
+                            <p class="Coeficient" id="CoeficientC6"></p>
+                            <p class="Coeficient" id="CoeficientC7"></p>
+                            <p class="Coeficient" id="CoeficientC8"></p>
+                            <p class="Coeficient" id="CoeficientC9"></p>
+                        </div>
+                        <div class="Lane"><hr></div>
+                        <div class="Divequality">
+                            <p class="equality" id="equalityCR3"></p>
+                            <p class="equality" id="equalityCR6"></p>
+                            <p class="equality" id="equalityCR9"></p>
+                        </div>
+                    </div>
+                    <div class="ExerciseSolution">
+                        <div class="Solution_X-Y-Z_">
+                            <div>
+                                <p class="X" >X =</p>
+                                <p class="Y" >Y =</p>
+                                <p class="Z" >Z =</p>
+                            </div>
+                            <form action="">
+                                <input  id="Cramer-result1" class="Gauss-Jordan-form"  type="text">
+                                <input  id="Cramer-result2" class="Gauss-Jordan-form"  type="text">
+                                <input  id="Cramer-result3" class="Gauss-Jordan-form" type="text">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="Modal-Button">
+                    <audio src=""></audio>
+                    <button  class="Button-Modal" id="ButtonCloseMOdalCra" onclick="Hide('Cramer')">Verificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ModalExercise3" id="Sarrus">
+        <div class="ModalBox">
+            <div class="Modal-title">
+                <h2>Le has ganado a la maquina</h2>
+                <p>Ahora resuelve para conseguir el punto</p>
+            </div>
+            <div class="Modal-Exercise">
+                <div class="Exercise-title">
+                    <p>Usa el metodo de Sarrus</p>
+                </div>
+                <div class="ExcercisePure">
+                    <div class="ExcerciseProblem">
+                        <div class="DivCoeficient">
+                            <p class="Coeficient" id="CoeficientS1"></p>
+                            <p class="Coeficient" id="CoeficientS2"></p>
+                            <p class="Coeficient" id="CoeficientS3"></p>
+                            <p class="Coeficient" id="CoeficientS4"></p>
+                            <p class="Coeficient" id="CoeficientS5"></p>
+                            <p class="Coeficient" id="CoeficientS6"></p>
+                            <p class="Coeficient" id="CoeficientS7"></p>
+                            <p class="Coeficient" id="CoeficientS8"></p>
+                            <p class="Coeficient" id="CoeficientS9"></p>
+                        </div>
+                    </div>
+                    <div class="ExerciseSolution">
+                        <div class="Solution_X-Y-Z_">
+                            <div>
+                                <p class="X">Det(a) =</p>
+                            </div>
+                            <form action="">
+                                <input id="Sarrus-result" class="Gauss-Jordan-form"  type="number">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="Modal-Button">
+                    <button id="ButtonCloseMOdalSarrus" class="Button-Modal" onclick="Hide('Sarrus')">Verificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./Game.js"></script>
+</html>

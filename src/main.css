@@ -1,0 +1,163 @@
+html{
+    background-color: #D9043D;
+    width: 100%;
+    height: 100%;
+}
+Body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.Contain-explications{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+    border-radius: 42px;
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.25);
+
+}
+.Explications-title h1{
+    color:#CF962A;
+}
+.Context{
+    width: 100% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 18px 0;
+}
+.Context-Modals{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+.Modals-Why, .Modals-who, .Modals-how{
+    width: 220px;
+    border: none;
+    margin-bottom: 15px;
+    padding: 8px 20px;
+    font-size: 20px;
+    background-color: #D9043D;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 9px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.image-content{
+    background-color:#D9043D ;
+    border-radius: 19px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.image-content img{
+    width: 140px;
+    object-fit: cover;
+}
+.Explications-text{
+    width: 400px;
+    color: #CF962A;
+    margin-bottom: 25px;
+}
+.Explications-text p{
+    text-align: center;
+}
+.Explications-button a{
+    background-color: #D9043D;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Why-Modal1{
+    position: absolute;
+    z-index: 200;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Modalbox{
+    background-color: #FFFFFF;
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.Modal1-title, .Modal2-title, .Modal3-title{
+    background-color: #D9043D;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 1px 30px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Modal1-text, .Modal2-text, .Modal3-text{
+    margin-bottom: 20px;
+}
+.Modal1-text p, .Modal2-text p, .Modal3-text p{
+    text-align: center;
+    color: #CF962A;
+}
+.Modal1-button button, .Modal2-button button, .Modal3-button button{ 
+    background-color: #D9043D;
+    color: #FFFFFF;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Who-Modal2{
+    position: absolute;
+    z-index: 200;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.How-Modal3{
+    position: absolute;
+    z-index: 200;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visto{
+    display: flex;
+}

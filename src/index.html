@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css" type="text/css">
+    <title>Algebra Game!</title>
+    <link rel="stylesheet" href="./main.css" type="text/css">
+</head>
+
+<body>
+    <div class="Contain-explications">
+        <div class="Explications-title">
+            <h1>¡Jugando con algebra!</h1>
+        </div>
+        <div class="Explications-context">
+            <div class="Context">
+                <div class="Context-Modals">
+                    <button class="Modals-Why" onclick="Hide('Why-Modal')">¿Por qué un juego?</button>
+                    <button class="Modals-who" onclick="Hide('Who-Modal')">¿Quienes somos?</button>
+                    <button class="Modals-how" onclick="Hide('How-Modal')">¿Cómo jugar?</button>
+                </div>
+                <div class="Context-image">
+                    <div class="image-content">
+                        <img src="./assets/HandGame.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Explications-text">
+            <p class="text1">Listo entonces, ahora podemos empezar a jugar
+                ¿Estas preparado para empezar a resolver temas de algebra lineal?</p>
+            <p class="text2">¡Buena suerte! <br>
+                ¡Muchas gracias por jugar!</p>
+        </div>
+        <div class="Explications-button">
+            <a href="./views/Game/Game.html">Empezar</a>
+        </div>
+    </div>
+    <div class="Why-Modal1" id="Why-Modal">
+        <div class="Modalbox">
+            <div class="Modal1-title">
+                <h1>¿Por qué un juego?</h1>
+            </div>
+            <div class="Modal1-text">
+                <p>Para la profesora Gianni Ramos hemos decidido hacer un juego en la web para
+                    personas que desean fortalecer y jugar con temas de algebra lineal. <br>
+                    <br>Nuestro objetivo es fomentar las metodolgias distintas a las tradicionales con respecto al
+                    aprendizaje.
+                </p>
+            </div>
+            <div class="Modal1-button"><button onclick="Hide('Why-Modal')">Cerrar</button></div>
+        </div>
+    </div>
+    <div class="Who-Modal2" id="Who-Modal">
+        <div class="Modalbox">
+            <div class="Modal2-title">
+                <h1>¿Quienes somos?</h1>
+            </div>
+            <div class="Modal2-text">
+                <p>¡Buenas!
+                    Somos estudiantes de ingeniería que cursan Algebra Lineal con la profesora Gianni. <br>
+                    <br>
+                    Ing. en Sistemas Sergio Calderon <br>
+                    Ing. en Sistemas Yager Machado <br>
+                    Ing. Industrial Juan Rincón
+                </p>
+            </div>
+            <div class="Modal2-button"><button onclick="Hide('Who-Modal')">Cerrar</button></div>
+        </div>
+    </div>
+    <div class="How-Modal3" id="How-Modal">
+        <div class="Modalbox">
+            <div class="Modal3-title">
+                <h1>¿Cómo jugar?</h1>
+            </div>
+            <div class="Modal3-text">
+                <p>¡El juego es muy sencillo!<br>
+                    <br>
+                    Como nuestra pagina se basa en un juego de piedra, papel y tijera tendrás que jugar contra la
+                    maquina,
+                    en el momento en que ganes tendrás que resolver un algún ejercicio de algebra lineal. Si lo
+                    resuelves
+                    exitosamente <br>
+                    tendras un punto positivo en caso de que no lo resuelvas bien tendras un punto negativo al tener una
+                    mayor cantidad
+                    de puntos negativos que de positivos perderas en caso contrario ganaras.
+                </p>
+            </div>
+            <div class="Modal3-button"><button onclick="Hide('How-Modal')">Cerrar</button></div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

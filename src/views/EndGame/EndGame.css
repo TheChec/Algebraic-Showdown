@@ -1,0 +1,79 @@
+html{
+    background-color: #D9043D;
+    width: 100%;
+    height: 100%;
+}
+Body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.Contain-explications{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+    border-radius: 42px;
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.25);
+
+}
+.Explications-title h1{
+    color:#CF962A;
+    text-align: center;
+}
+.text1{
+    width: 400px;
+    margin-bottom: 30px;
+}
+.text2{
+    margin-top: 30px;
+}
+.image-content{
+    background-color:#D9043D ;
+    border-radius: 19px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.image-content img{
+    width: 200px;
+    object-fit: cover;
+}
+.Explications-text{
+    width: 400px;
+    color: #CF962A;
+    margin-bottom: 25px;
+}
+.Explications-text p{
+    text-align: center;
+}
+
+.Explications-text a{
+    background-color: #D9043D;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Explications-button a{
+    background-color: #D9043D;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
