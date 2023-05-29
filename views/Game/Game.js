@@ -78,20 +78,18 @@ function Matriz(n,k){
 }
 function GameDecision(option){
 
-    var Game = ["Rock", "Paper", "Scissor"];
+    var Game = ["Piedra", "Papel", "Tijeras"];
     var MachineAleatory = Game[Math.floor(Math.random()*Game.length)];
     var Methods = Math.floor(Math.random()*2+1);
-    
-    console.log("Usuario: " + option);
-    console.log("Computadora: " + MachineAleatory);
 
-
+    result = document.getElementById("Result-Machine").innerHTML=MachineAleatory;
     if(option === MachineAleatory){
-        console.log("Empate");
+
+        result1 = document.getElementById("Result-Machine2").innerHTML="Empate";
         
-    }else if((option === "Rock" && MachineAleatory === "Scissor") || (option === "Paper" && MachineAleatory === "Rock") || (option === "Scissor" && MachineAleatory === "Paper")){
-        console.log("Ganaste ");
-        
+    }else if((option === "Piedra" && MachineAleatory === "Tijeras") || (option === "Papel" && MachineAleatory === "Piedra") || (option === "Scissor" && MachineAleatory === "Paper")){
+
+        result1 = document.getElementById("Result-Machine2").innerHTML="Ganaste";
         switch (Methods) {
             case 1:
                 CramerMethod();
@@ -110,7 +108,8 @@ function GameDecision(option){
         }
 
     } else {
-        console.log("Perdiste");
+        result1 = document.getElementById("Result-Machine2").innerHTML="Perdiste";
+
     }
    
 }
